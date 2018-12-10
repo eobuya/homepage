@@ -1,39 +1,168 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Edwin Obuya</title>
-	</head>
+<html lang="en">
+<head>
+  <title>Edwin Obuya</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: tahoma;
+}
+
+/*style the header */
+.header {
+    background-color: #3D9970;
+    padding: 80px;
+    text-align: right;
+    color: white;
+}
+
+/*style the menu..horizontal*/
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #111;
+}
+
+/*style the content */
+.content_top {
+    background-color: #D3D3D3;
+    padding: 10px;
+    text-align: justified;
+}
+.content_center {
+    background-color: white;
+    padding: 10px;
+    text-align: justified;
+}
+
+/*styling the table*/
+.content_bottom h3 {
+  text-align: center;
+}
+
+.content_bottom table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/*style the footer */
+.footer {
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+	  <img src="IMG_9501.jpg" alt="Edwin" style="float:left;width:150px;height:160px">
+    <h1>Welcome To My WebPage</h1>
+</div>
+
+<div class="menu">
+  <ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#interests">Interests and Hobbies</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</div>
+
+<div class="content_top">
+    <h3>About Me</h3>
+    <p>My name is Edwin Obuya. I am a senior at Point Park University in Pittsburgh, Pennsylvania, pursuing a Bachelors of Science Degree in Information Technology. I have been working in the legal
+      industry for over ten years, and I decided to go back to school to change my career to Software Development. I was born and raised in Mombasa, Kenya.</p>
+</div>
+<div class="content_center">
+    <h3>Interests</h3>
+    <ul>
+      <li>Soccer: Player and Fanatic</li>
+      <li>Quadcoptors: Building and Flying</li>
+      <li>Travel</li>
+      <li>Music</li>
+      <li>Learning to code</li>
+    </ul>
+</div>
+<div class="content_bottom">
+    <h3>Current Courses</h3>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Advanced Programming</td>
+        <td>The course focuses on problem solving but with a much higher difficulty level.
+            The students will be required to write programs that involve multiple units of
+            organization, e.g., classes. Several advanced algorithms will be discussed and
+            should be implemented by the students. Prerequisites: CMPS 260.</td>
+      </tr>
+      <tr>
+        <td>Web Application Development</td>
+        <td>This course will provide a foundation in several facets of establishing and
+            maintaining a website. This includes the latest advances in client side as
+            well as server side technologies. The goal is to have students design, implement,
+            and run advanced  web  applications.  It  will  also  cover  in  some  detail
+            the  protocols  required  for  web  development.  Prerequisites:CMPS 261, CMPS 262.</td>
+      </tr>
+      <tr>
+        <td>Accounting I  (1st Term)</td>
+        <td>The basic principles and procedures for gathering, recording, summarizing and
+            interpreting accounting data.</td>
+      </tr>
+      <tr>
+        <td>Accounting II (2nd Term)</td>
+        <td>General accounting principles, special procedures for manufacturing operations
+            and analysis of financial and fund statements. Prerequisite: ACCT 101.</td>
+      </tr>
+      <tr>
+        <td>Corporate Finance</td>
+        <td>The problems associated with the effective management of capital. Includes the
+            development of corporations, legal aspects, securities market, and financial
+            planning and development. Prerequisites: ACCT 210, MATH 175.</td>
+      </tr>
+    </table>
+</div>
+
+<div class="footer">
+	<h3>Contact</h3>
+	  <p>Phone: (412) 720-7421<br>
+	  Email: eobuya@pointpark.edu</p>
+</div>
 
 
-
-
-	<body>
-	<h3>Introduction</h3>
-		<p style="background-color:CadetBlue;">Hello. My name is Edwin. I am a senior at Point Park University in Pittsburgh, Pennsylvania,
-		pursuing a Bachelors of Science Degree in Information Technology. I have been working in the legal<br>
-		industry for over ten years, and I decided to go back to school to change my career to Software Development. I was born and raised in Mombasa, Kenya.</p>
-	<h3>Picture</h3>
-		 <img src="Mombasa.jpg" alt="Mombasa, Kenya" width="250" height="170">
-	<h3>Interests</h3>
-	<ul>
-	  <li>Playing and watching soccer</li>
-	  <li>Quadcoptors</li>
-	  <li>Travel</li>
-	  <li>Music</li>
-	  <li>Learning to code</li>
-	</ul>
-	<h3>Current Courses</h3>
-	<ul>
-	  <li>Advanced Programming</li>
-	  <li>Web Applications Development</li>
-	  <li>Accounting I  (1st Term)</li>
-	  <li>Accounting II (2nd Term)</li>
-	  <li>Corporate Finance</li>
-	</ul>
-	<h3>Contact Information</h3>
-	<ul>
-	  <li>Phone: 412-720-7421</li>
-	  <li>Email: eobuya@pointpark.edu</li>
-	</ul>
-	</body>
+</body>
 </html>
