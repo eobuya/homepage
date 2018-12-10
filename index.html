@@ -4,6 +4,8 @@
   <title>Edwin Obuya</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="jquery-3.1.1.min.js"></script>
+  <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 <style>
 body {
   margin: 0;
@@ -89,25 +91,27 @@ tr:nth-child(even) {
 
 <div class="header">
 	  <img src="IMG_9501.jpg" alt="Edwin" style="float:left;width:150px;height:160px">
-    <h1>Welcome To My WebPage</h1>
+    <h1 id="home">Welcome To My WebPage</h1>
+    <h2 id="header_1">Here you can find a few things about me!</h1>
 </div>
 
 <div class="menu">
   <ul>
     <li><a class="active" href="#home">Home</a></li>
     <li><a href="#interests">Interests and Hobbies</a></li>
+    <li><a href="#current">Current Courses</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#about">About</a></li>
   </ul>
 </div>
 
 <div class="content_top">
-    <h3>About Me</h3>
+    <h3 id="about">About Me</h3>
     <p>My name is Edwin Obuya. I am a senior at Point Park University in Pittsburgh, Pennsylvania, pursuing a Bachelors of Science Degree in Information Technology. I have been working in the legal
       industry for over ten years, and I decided to go back to school to change my career to Software Development. I was born and raised in Mombasa, Kenya.</p>
 </div>
 <div class="content_center">
-    <h3>Interests</h3>
+    <h3 id="interests">Interests</h3>
     <ul>
       <li>Soccer: Player and Fanatic</li>
       <li>Quadcoptors: Building and Flying</li>
@@ -117,7 +121,7 @@ tr:nth-child(even) {
     </ul>
 </div>
 <div class="content_bottom">
-    <h3>Current Courses</h3>
+    <h3 id="current">Current Courses</h3>
     <table>
       <tr>
         <th>Name</th>
@@ -158,11 +162,27 @@ tr:nth-child(even) {
 </div>
 
 <div class="footer">
-	<h3>Contact</h3>
+	<h3 id="contact">Contact</h3>
 	  <p>Phone: (412) 720-7421<br>
 	  Email: eobuya@pointpark.edu</p>
 </div>
 
+<script>
+
+$(document).ready(function() {
+
+  $("#header_1").slideUp(3000);
+
+  $("td").hover(function(){
+    $(this).css({color:'red'});
+  },
+  function(){
+    $(this).css({color:'black'});
+  });
+  
+});
+
+</script>
 
 </body>
 </html>
